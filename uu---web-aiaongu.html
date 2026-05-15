@@ -1,0 +1,1920 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="基于 ASP.NET 1.1 的 Web 开发">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/zh-aspnet1.1-avril-2004/uu---web-aiaongu.html">
+      
+      
+        <link rel="prev" href="asp-uuiuian---3.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>10. 附录 - Web 开发工具 - 基于 ASP.NET 1.1 的 Web 开发</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "基于 ASP.NET 1.1 的 Web 开发";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#10-web" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="基于 ASP.NET 1.1 的 Web 开发" class="md-header__button md-logo" aria-label="基于 ASP.NET 1.1 的 Web 开发" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            基于 ASP.NET 1.1 的 Web 开发
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              10. 附录 - Web 开发工具
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="切换至深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="切换至浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/zh-aspnet1.1-avril-2004" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="基于 ASP.NET 1.1 的 Web 开发" class="md-nav__button md-logo" aria-label="基于 ASP.NET 1.1 的 Web 开发" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    基于 ASP.NET 1.1 的 Web 开发
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/zh-aspnet1.1-avril-2004" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    欢迎
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ianie.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. 简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ihuhihi.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. 基础知识
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="aspnet-web-aiauen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. ASP.NET Web 开发入门
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="aspnet-aiaihu.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. ASP.NET 开发基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="onguieianuani.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. 用户界面管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hii.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. 示例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="asp-uuiuian---1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. ASP 服务器组件 - 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="asp-uuiuian---2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. ASP 服务器组件 - 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="asp-uuiuian---3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. ASP 服务器组件 - 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. 附录 - Web 开发工具
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="uu---web-aiaongu.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. 附录 - Web 开发工具
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#101-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1. Web 服务器、浏览器、脚本语言
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2. 在哪里可以找到这些工具
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-easyphp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3. EasyPHP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.3. EasyPHP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1031-php" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.1. PHP 解释器的所有配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1032-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.2. Apache 管理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1033-apache-htpdconf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.3. Apache 配置文件 [htpd.conf]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1034-phpmyadmin-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.4. 使用 PhpMyAdmin 管理 MySQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-php" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4. PHP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105-perl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5. PERL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-vbscriptjavascriptperlscript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6. VBScript、JavaScript、PerlScript
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7. JAVA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#108-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8. Apache 服务器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.8. Apache 服务器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1081" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8.1. 配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1082-php-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8.2. PHP - Apache 链接
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1083-perl-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8.3. PERL-APACHE 链接
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#109-pws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9. PWS 服务器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.9. PWS 服务器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1091" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.1. 安装
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1092" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.2. 初步测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1093-php-pws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.3. PHP - PWS 链接
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1010-tomcatjava-servlet-jspjava" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.10. Tomcat：Java Servlet 和 JSP（Java 服务器页面）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.10. Tomcat：Java Servlet 和 JSP（Java 服务器页面）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.10.1. 安装
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10102-tomcat-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.10.2. 启动/停止 Tomcat Web 服务器
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1011-jbuilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.11. JBuilder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1012-cassini-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.12. Cassini Web 服务器
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a id="toc67828559"></a>
+<a id="toc57014790"></a>
+<a id="toc18463275"></a>
+<a id="toc14772370"></a></p>
+<h1 id="10-web">10. 附录 - Web 开发工具</h1>
+<p>在此，我们将说明如何查找并安装用于 Java、PHP、ASP 和 ASP.NET Web 开发的免费工具。部分工具已更新，此处提供的说明可能不再适用于最新版本。读者需据此进行调整……：</p>
+<ul>
+  <li>一款能够显示 XML 的最新<b>浏览器</b>。本课程中的示例已在 Internet Explorer 6 上经过测试。
+  </li>
+  <li>最新的 <b>JDK</b>（Java 开发工具包）。JDK 包含 Java 1.4 浏览器插件，该插件支持浏览器通过 JDK 1.4 显示 Java 小程序。
+  </li>
+  <li>用于编写 Java Servlet <b>的开发环境</b>。本课程使用 JBuilder 7。
+  </li>
+  <li><b>Web 服务器</b>：Apache、PWS（个人 Web 服务器，Cassini）、Tomcat。
+    <ul>
+      <li>Apache可用于开发PERL（实用提取和报告语言）或PHP（个人主页）的Web应用程序
+      </li>
+      <li>PWS 可在 Windows 平台上用于开发 ASP（Active Server Pages）或 PHP Web 应用程序。Cassini 支持 ASP.NET 开发。
+      </li>
+      <li>Tomcat 用于开发基于 Java Servlet 或 JSP（Java Server Pages）的 Web 应用程序
+      </li>
+    </ul>
+  </li>
+  <li><b>数据库管理系统</b>：MySQL
+  </li>
+  <li><b>EasyPHP</b>：一款将 Apache Web 服务器、PHP 语言和 MySQL 数据库管理系统捆绑在一起的工具
+  </li>
+</ul>
+
+<p><a id="toc67828560"></a>
+<a id="toc57014791"></a>
+<a id="toc18463276"></a>
+<a id="toc14772371"></a></p>
+<h2 id="101-web">10.1. Web 服务器、浏览器、脚本语言</h2>
+<ol>
+  <li><b>主要 Web 服务器 </b>
+  </li>
+</ol>
+<ul>
+  <li>Apache（Linux、Windows）
+  </li>
+  <li>Internet Information Server (IIS) (NT)、Personal Web Server (PWS) (Windows 9x)、Cassini (.NET 平台)
+  </li>
+</ul>
+<ol>
+  <li><b>主要浏览器</b>
+  </li>
+</ol>
+<ul>
+  <li>Internet Explorer (Windows)
+  </li>
+  <li>网景 (Linux, Windows)
+  </li>
+  <li>Mozilla (Linux, Windows)
+  </li>
+  <li>Opera（Linux、Windows）
+  </li>
+</ul>
+<ol>
+  <li><b>服务器端脚本语言</b>
+  </li>
+</ol>
+<ul>
+  <li>VBScript (IIS, PWS)
+  </li>
+  <li>JavaScript (IIS, PWS)
+  </li>
+  <li>Perl (Apache, IIS, PWS)
+  </li>
+  <li>PHP (Apache, IIS, PWS)
+  </li>
+  <li>Java (Apache, Tomcat)
+  </li>
+  <li>.NET 语言
+  </li>
+</ul>
+<ol>
+  <li><b>浏览器端脚本语言</b>
+  </li>
+</ol>
+<ul>
+  <li>VBScript (IE)
+  </li>
+  <li>JavaScript (IE, Netscape)
+  </li>
+  <li>PerlScript (IE)
+  </li>
+  <li>Java (IE, Netscape)
+  </li>
+</ul>
+
+<p><a id="toc67828561"></a>
+<a id="toc57014792"></a>
+<a id="toc18463277"></a>
+<a id="toc14772372"></a></p>
+<h2 id="102">10.2. 在哪里可以找到这些工具</h2>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Netscape
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.netscape.com/（下载链接）</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Internet Explorer
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.microsoft.com/windows/ie/default.asp</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Mozilla
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.mozilla.org</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>PHP
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.php.net</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Active PERL
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.activestate.com </b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>VBScript、JavaScript
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://msdn.microsoft.com/scripting（点击“Windows Script”链接）</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Java
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://java.sun.com/</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Apache
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.apache.org/</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>PWS
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>包含在 Windows 95 的 NT 4.0 选件包中</b></div><div style="margin:0 0 0.5em 0"><b>包含在 Windows 98 光盘中</b></div><div style="margin:0 0 0.5em 0"><b>http://www.microsoft.com/ntserver/nts/downloads/recommended/NT4OptPk/win95.asp</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>IIS（Windows NT/2000）
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.microsoft.com</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Tomcat
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://jakarta.apache.org/tomcat/</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>JBuilder
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.borland.com/jbuilder/</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>EasyPHP
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.easyphp.org/</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Cassini
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.asp.net</b></div></td></tr></table>
+
+<p><a id="toc67828562"></a>
+<a id="toc57014793"></a>
+<a id="toc18463278"></a>
+<a id="toc14772373"></a></p>
+<h2 id="103-easyphp">10.3. EasyPHP</h2>
+<p>该应用程序非常方便，因为它在一个软件包中集成了以下组件：</p>
+<ul>
+  <li>Apache Web 服务器
+  </li>
+  <li>PHP 解释器
+  </li>
+  <li>MySQL 数据库管理系统 (3.23.x)
+  </li>
+  <li>MySQL 管理工具：PhpMyAdmin
+  </li>
+</ul>
+
+<p>安装程序界面如下所示：</p>
+<p><img src="images/100000000000020A0000005234161DCB.png" width="522" height="82" style="width:13.811cm;height:2.17cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000020A0000005234161DCB.png" /></p>
+<p>安装 EasyPHP 非常简单，文件系统中会创建一个目录结构：</p>
+<p><img src="images/10000000000001B600000146978AB819.png" width="438" height="326" style="width:11.589cm;height:8.625cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001B600000146978AB819.png" /></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>easyphp.exe
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">应用程序可执行文件</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>apache
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Apache 服务器目录结构</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>mysql
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">MySQL 数据库目录</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>phpMyAdmin
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">phpMyAdmin 应用程序目录结构</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>PHP
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">PHP 目录结构</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>www
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">由 EasyPHP Apache 服务器提供的网页目录树的根目录</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>cgi-bin
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">用于存放 Apache 服务器 CGI 脚本的目录</div></td></tr></table>
+
+<p>EasyPHP 的主要优势在于该应用程序已预先配置好。因此，Apache、PHP 和 MySQL 已配置为协同工作。当您通过“程序”菜单中的快捷方式启动 <em>EasyPHP</em> 时，屏幕右下角会出现一个图标。</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000015400000048716652DD.png" width="340" height="72" style="display:inline-block; margin:4px;width:8.996cm;height:1.905cm;" class="odt-zoomable" data-zoom-src="images/100000000000015400000048716652DD.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000890000001D341042E0.png" width="137" height="29" style="display:inline-block; margin:4px;width:3.625cm;height:0.767cm;" class="odt-zoomable" data-zoom-src="images/10000000000000890000001D341042E0.png" /></td></tr></table>
+
+<p>如果 <em>Apache</em> Web 服务器和 <em>MySQL</em> 数据库正在运行，带有红色圆点的“E”图标应会闪烁。右键单击该图标将打开一个包含以下选项的菜单：</p>
+<p><img src="images/100000000000006E000000A9539191D3.png" width="110" height="169" style="width:2.91cm;height:4.471cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000006E000000A9539191D3.png" /></p>
+<p><em>“管理</em>”选项允许您配置设置并执行功能测试：</p>
+<p><img src="images/10000000000002DF0000016D6CB044FE.png" width="680" height="338" style="width:17.992cm;height:8.931cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002DF0000016D6CB044FE.png" /></p>
+<p><a id="toc57014794"></a>
+<a id="toc18463279"></a>
+<a id="toc14772374"></a>
+<a id="toc67828563"></a></p>
+<h3 id="1031-php">10.3.1. PHP 解释器的所有配置</h3>
+<p><strong>“PHP 信息</strong>”按钮可让您验证 Apache-PHP 组合是否正常工作：此时应显示一个 PHP 信息页面：</p>
+<p><img src="images/10000000000002DF000001573392C759.png" width="680" height="317" style="width:17.992cm;height:8.387cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002DF000001573392C759.png" /></p>
+<p><strong>“扩展</strong>”按钮会显示已安装的 PHP 扩展列表。这些实际上是函数库。</p>
+<p><img src="images/1000000000000189000000DF999A8FC1.png" width="393" height="223" style="width:10.398cm;height:5.9cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000189000000DF999A8FC1.png" /></p>
+<p>例如，上图显示了使用 MySQL 数据库所需的函数均已存在。</p>
+<p><strong>“设置”</strong>按钮会显示 MySQL 数据库管理员<em>的用户名和密码</em>。</p>
+<p><img src="images/100000000000012E0000004DC39428BD.png" width="302" height="77" style="width:7.99cm;height:2.037cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000012E0000004DC39428BD.png" /></p>
+<p>虽然使用 MySQL 数据库超出了本快速概述的范围，但这里很清楚，应为数据库管理员设置密码。 </p>
+<p><a id="toc67828564"></a>
+<a id="toc57014795"></a>
+<a id="toc18463280"></a>
+<a id="toc14772375"></a></p>
+<h3 id="1032-apache">10.3.2. Apache 管理</h3>
+<p>仍在 EasyPHP 管理页面上<strong>，“您的别名</strong>”链接允许您定义与目录关联的别名。这使您能够将网页放置在 EasyPHP 目录树中 www 目录之外的位置。</p>
+<p><img src="images/10000000000002D10000010047855AB1.png" width="680" height="242" style="width:17.992cm;height:6.391cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002D10000010047855AB1.png" /></p>
+<p>若在上述页面中输入以下信息：</p>
+<p><img src="images/10000000000001F70000005F1EE8B944.png" width="503" height="95" style="width:13.309cm;height:2.514cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F70000005F1EE8B944.png" /></p>
+<p>并点击<em>“验证</em>”按钮，<em>&lt;easyphp&gt;\apache\conf\httpd.conf</em> 文件中将添加以下内容：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>    <span class="n">Alias</span> <span class="o">/</span><span class="n">st</span><span class="o">/</span> <span class="s2">&quot;e:/data/serge/web/&quot;</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="o">&lt;</span><span class="n">Directory</span> <span class="s2">&quot;e:/data/serge/web&quot;</span><span class="o">&gt;</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>        <span class="n">Options</span> <span class="n">FollowSymLinks</span> <span class="n">Indexes</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>        <span class="n">AllowOverride</span> <span class="kc">None</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>        <span class="n">Order</span> <span class="n">deny</span><span class="p">,</span><span class="n">allow</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>        <span class="n">allow</span> <span class="kn">from</span><span class="w"> </span><span class="mf">127.0.0.1</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>        <span class="n">deny</span> <span class="kn">from</span><span class="w"> </span><span class="nn">all</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>    <span class="o">&lt;/</span><span class="n">Directory</span><span class="o">&gt;</span>
+</code></pre></div>
+<p><em>&lt;easyphp&gt;</em> 指的是 EasyPHP 的安装目录。<em>httpd.conf</em> 是 Apache 服务器的配置文件。因此，您也可以通过直接编辑该文件来达到相同的效果。通常情况下，Apache 会立即应用对 <em>httpd.</em>conf 文件的更改。如果未立即生效，您需要通过 EasyPHP 图标停止并重启服务器： </p>
+<p><img src="images/100000000000006E000000A9539191D3.png" width="110" height="169" style="width:2.91cm;height:4.471cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000006E000000A9539191D3.png" /></p>
+<p>要完成本示例，现在我们可以将网页放置在目录树 <em>e:\data\serge\web</em> 中： </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>dos&gt;dir e:\data\serge\web\html\balises.htm
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>14/07/2002  17:02                3 767 balises.htm
+</code></pre></div>
+<p>并使用别名 <strong>st</strong> 请求该页面：</p>
+<p><img src="images/100000000000018800000127CABE7D97.png" width="392" height="295" style="width:10.372cm;height:7.805cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000018800000127CABE7D97.png" /></p>
+<p>在此示例中，Apache 服务器已配置为在 81 端口运行。其默认端口为 80。这由我们之前看到的 <em>httpd.conf</em> 文件中的以下行控制：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>Port 81
+</code></pre></div>
+<p><a id="toc67828565"></a>
+<a id="toc57014796"></a>
+<a id="toc18463281"></a>
+<a id="toc14772376"></a></p>
+<h3 id="1033-apache-htpdconf">10.3.3. Apache 配置文件 [htpd.conf]</h3>
+<p>若需对 Apache 进行精细调整，必须手动编辑其 <em>httpd.conf</em> 配置文件，该文件位于 <em>&lt;easyphp&gt;\apache\conf</em> 文件夹中：</p>
+<p><img src="images/100000000000014E000000E6ACD5247E.png" width="334" height="230" style="width:8.837cm;height:6.085cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014E000000E6ACD5247E.png" /></p>
+<p>在此配置文件中，有几个关键点需要注意：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">行</span><span style="font-weight:bold"></span></span></span>
+</code></pre></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>作用</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>ServerRoot &quot;D:/Program Files/Apache Group/Apache&quot;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">指定包含 Apache 目录树的文件夹</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>Port 80
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">指定 Web 服务器将使用的端口。通常为 80。通过更改此行，您可以让 Web 服务器在其他端口上运行</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>ServerAdmin root@istia.univ-angers.fr
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Apache 服务器管理员的电子邮件地址</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>ServerName stahe.istia.uang
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Apache 服务器运行所在的机器名称</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>ServerRoot &quot;E:/Program Files/EasyPHP/apache&quot;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Apache 服务器的安装目录。当配置文件中出现相对文件名时，它们都是相对于此目录的。</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>DocumentRoot &quot;E:/Program Files/EasyPHP/www&quot;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">服务器提供的网页树的根目录。在此，URL<i> http://machine/rep1/fic1.html </i>将对应文件 <i>E:\Program Files\EasyPHP\www\rep1\fic1.html</i></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>&lt;Directory &quot;E:/Program Files/EasyPHP/www&quot;&gt;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">设置前一个文件夹的属性</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>ErrorLog logs/error.log
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">日志文件夹，因此实际上是 <i>&lt;ServerRoot&gt;\logs\error.log</i>：<i>E:\Program Files\EasyPHP\apache\logs\error.log</i>。若发现 Apache 服务器无法正常工作，请检查此文件。</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>    ScriptAlias /cgi-bin/ &quot;E:/Program Files/EasyPHP/cgi-bin/&quot;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><i>E:\Program Files\EasyPHP\cgi-bin </i>将成为目录树的根目录，您可以在其中放置 CGI 脚本。因此，URL<i> http://machine/cgi-bin/rep1/script1.pl</i> 将是 CGI 脚本 <i>E:\Program Files\EasyPHP\cgi-bin</i><i>\rep1\script1.pl </i>的访问地址。</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>&lt;Directory &quot;E:/Program Files/EasyPHP/cgi-bin/&quot;&gt;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">设置上述文件夹的属性</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="n">LoadModule</span><span class="w"> </span><span class="n">php4_module</span><span class="w"> </span><span class="s">&quot;E:/Program Files/EasyPHP/php/php4apache.dll&quot;</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="n">AddModule</span><span class="w"> </span><span class="n">mod_php4</span><span class="p">.</span><span class="n">c</span>
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">用于加载模块的代码行，使 Apache 能够与 PHP4 协同工作。</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>    AddType application/x-httpd-php .phtml .pwml .php3 .php4 .php .php2 .inc
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">将这些文件扩展名设置为被视为 PHP 文件</div></td></tr></table>
+
+<p><a id="toc67828566"></a>
+<a id="toc57014797"></a>
+<a id="toc18463282"></a>
+<a id="toc14772377"></a></p>
+<h3 id="1034-phpmyadmin-mysql">10.3.4. 使用 PhpMyAdmin 管理 MySQL</h3>
+<p>在 EasyPHP 管理页面上，点击 <strong>PhpMyAdmin</strong> 按钮： </p>
+<p><img src="images/100000000000032D0000015989006742.png" width="680" height="289" style="width:17.979cm;height:7.634cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000032D0000015989006742.png" /></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><i>“主页</i>”下方的下拉列表显示当前的数据库。</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000008A000000A9290338B1.png" width="138" height="169" style="display:inline-block; margin:4px;width:3.651cm;height:4.471cm;" class="odt-zoomable" data-zoom-src="images/100000000000008A000000A9290338B1.png" /></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">括号中的数字表示表的数量。若选择某个数据库，其表将被显示：</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000086000000EC977ACD13.png" width="134" height="236" style="display:inline-block; margin:4px;width:3.545cm;height:6.244cm;" class="odt-zoomable" data-zoom-src="images/1000000000000086000000EC977ACD13.png" /></td></tr></table>
+
+<p>该网页提供了多种数据库操作功能：</p>
+<p><img src="images/10000000000002B50000010B3AC00C67.png" width="680" height="262" style="width:17.992cm;height:6.932cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002B50000010B3AC00C67.png" /></p>
+<p>若点击<em>“查看用户</em>”链接：</p>
+<p><img src="images/100000000000021A0000011EC1D790F4.png" width="538" height="286" style="width:14.235cm;height:7.567cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021A0000011EC1D790F4.png" /></p>
+<p>这里只有一个用户：root，即 MySQL 管理员。点击<em>“编辑</em>”链接，您可以更改其密码，当前密码为空——这种做法对于管理员而言并不推荐。关于 <em>PhpMyAdmin</em>，我们不再赘述，因为它是一款功能丰富的工具，要全面介绍需要好几页的篇幅。</p>
+<p><a id="toc67828567"></a>
+<a id="toc57014798"></a>
+<a id="toc18463283"></a>
+<a id="toc14772378"></a></p>
+<h2 id="104-php">10.4. PHP</h2>
+<p>我们已经了解了如何通过 EasyPHP 应用程序获取 PHP。若要直接获取 PHP，请访问网站 <strong>http://www.php.net。</strong>PHP 不仅限于 Web 应用，在 Windows 系统中也可作为脚本语言使用。请编写以下脚本并将其保存为 <em>date.php</em>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>&lt;?
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>  // script php affichant l&#39;heure
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>  $maintenant=date(&quot;j/m/y, H:i:s&quot;,time());
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>  echo &quot;Nous sommes le $maintenant&quot;;
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>?&gt;
+</code></pre></div>
+<p>在 DOS 窗口中，导航至<strong>包含 [date.php]</strong> 的目录<strong>并运行它</strong><strong>：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>dos&gt;&quot;e:\program files\easyphp\php\php.exe&quot; date.php
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>X-Powered-By: PHP/4.2.0
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>Content-type: text/html
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>Nous sommes le 18/07/02, 09:31:01
+</code></pre></div>
+<p><a id="toc67828568"></a>
+<a id="toc57014799"></a>
+<a id="toc18463284"></a>
+<a id="toc14772379"></a></p>
+<h2 id="105-perl">10.5. PERL</h2>
+<p>最好已安装 Internet Explorer。如果已安装，Active Perl 会将其配置为接受 HTML 页面中的 PERL 脚本，这些脚本将由 IE 本身在客户端执行。Active Perl 网站位于 URL http://www.activestate.comA 安装后，PERL 将安装在一个我们称为 <strong>&lt;perl&gt;</strong> 的目录中。它包含以下目录结构：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>DEISL1   ISU        32 403  23/06/00  17:16 DeIsL1.isu
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>BIN            &lt;REP&gt;        23/06/00  17:15 bin
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>LIB            &lt;REP&gt;        23/06/00  17:15 lib
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>HTML           &lt;REP&gt;        23/06/00  17:15 html
+<a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a>EG             &lt;REP&gt;        23/06/00  17:15 eg
+<a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a>SITE           &lt;REP&gt;        23/06/00  17:15 site
+<a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a>HTMLHELP       &lt;REP&gt;        28/06/00  18:37 htmlhelp
+</code></pre></div>
+<p>可执行文件 <em>perl.exe</em> 位于 <strong>&lt;perl&gt;\bin</strong> 目录下。Perl 是一种可在 Windows 和 Unix 系统上运行的脚本语言，也常用于 Web 编程。让我们编写第一个脚本：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="err">#</span><span class="w"> </span><span class="nx">script</span><span class="w"> </span><span class="nx">PERL</span><span class="w"> </span><span class="nx">affichant</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">heure</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="err">#</span><span class="w"> </span><span class="nx">modules</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="nx">use</span><span class="w"> </span><span class="nx">strict</span><span class="p">;</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>
+<a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a><span class="err">#</span><span class="w"> </span><span class="nx">programme</span>
+<a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a><span class="nx">my</span><span class="w"> </span><span class="p">(</span><span class="nx">$secondes</span><span class="p">,</span><span class="nx">$minutes</span><span class="p">,</span><span class="nx">$heure</span><span class="p">)</span><span class="o">=</span><span class="nx">localtime</span><span class="p">(</span><span class="nx">time</span><span class="p">);</span>
+<a id="__codelineno-39-8" name="__codelineno-39-8" href="#__codelineno-39-8"></a><span class="nx">print</span><span class="w"> </span><span class="s2">&quot;Il est $heure:$minutes:$secondes\n&quot;</span><span class="p">;</span>
+</code></pre></div>
+<p>将此脚本保存<em>为名为 heure.pl 的</em>文件。打开一个 DOS 窗口，导航至<strong><em>包含该脚本的</em></strong>目录<strong><em>，并运行它：</em></strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>dos&gt;e:\perl\bin\perl.exe heure.pl
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>Il est 9:34:21
+</code></pre></div>
+<p><a id="toc67828569"></a>
+<a id="toc57014800"></a>
+<a id="toc18463285"></a>
+<a id="toc14772380"></a></p>
+<h2 id="106-vbscriptjavascriptperlscript">10.6. VBScript、JavaScript、PerlScript</h2>
+<p>这些是适用于 Windows 的脚本语言。它们可以在各种环境中运行，例如</p>
+<ul>
+  <li><i>Windows Scripting Host</i>（用于直接在 Windows 中使用，特别是编写系统管理脚本）
+  </li>
+  <li><i>Internet Explorer</i>。随后，它被用于 HTML 页面中，增加了仅靠 HTML 无法实现的交互性。
+  </li>
+  <li><i>Internet Information Server </i>(IIS)——微软在 NT/2000 上的 Web 服务器，以及其在 Win9x 上的等效版本 <i>Personal Web Server </i>(PWS)。在这种情况下，VBScript 用于服务器端 Web 编程，微软将这项技术称为 ASP（<i>Active Server Pages</i>）。
+  </li>
+</ul>
+
+<p>从以下网址下载安装文件：<em>http://msdn.microsoft.com/scripting</em>，并<em>按照“Windows</em> Script”链接的指引操作。安装内容包括：</p>
+<ul>
+  <li><i>Windows Scripting Host</i> 容器，该容器支持多种脚本语言，如 VBScript 和 JavaScript，以及 Active Perl 附带的 PerlScript 等。
+  </li>
+  <li>一个 VBScript 解释器
+  </li>
+  <li>一个 JavaScript 解释器
+  </li>
+</ul>
+
+<p>让我们进行一些快速测试。编写以下 <em>VBScript</em> 程序：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="c1">&#39; a class</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="kd">class</span><span class="w"> </span><span class="nc">personne</span>
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="w">  </span><span class="kd">Dim</span><span class="w"> </span><span class="nv">nom</span>
+<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a><span class="w">  </span><span class="kd">Dim</span><span class="w"> </span><span class="nv">age</span>
+<a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a><span class="k">End</span><span class="w"> </span><span class="k">class</span>
+<a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>
+<a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a><span class="c1">&#39; creation of a person object</span>
+<a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a><span class="k">Set</span><span class="w"> </span><span class="n">p1</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="n">personne</span>
+<a id="__codelineno-41-9" name="__codelineno-41-9" href="#__codelineno-41-9"></a><span class="k">With</span><span class="w"> </span><span class="n">p1</span>
+<a id="__codelineno-41-10" name="__codelineno-41-10" href="#__codelineno-41-10"></a><span class="w">  </span><span class="p">.</span><span class="n">nom</span><span class="o">=</span><span class="s2">&quot;dupont&quot;</span>
+<a id="__codelineno-41-11" name="__codelineno-41-11" href="#__codelineno-41-11"></a><span class="w">  </span><span class="p">.</span><span class="n">age</span><span class="o">=</span><span class="mi">18</span>
+<a id="__codelineno-41-12" name="__codelineno-41-12" href="#__codelineno-41-12"></a><span class="k">End</span><span class="w"> </span><span class="k">With</span>
+<a id="__codelineno-41-13" name="__codelineno-41-13" href="#__codelineno-41-13"></a>
+<a id="__codelineno-41-14" name="__codelineno-41-14" href="#__codelineno-41-14"></a><span class="c1">&#39; display properties person p1</span>
+<a id="__codelineno-41-15" name="__codelineno-41-15" href="#__codelineno-41-15"></a><span class="k">With</span><span class="w"> </span><span class="n">p1</span>
+<a id="__codelineno-41-16" name="__codelineno-41-16" href="#__codelineno-41-16"></a><span class="w">  </span><span class="n">wscript</span><span class="p">.</span><span class="n">echo</span><span class="w"> </span><span class="s2">&quot;nom=&quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">.</span><span class="n">nom</span>
+<a id="__codelineno-41-17" name="__codelineno-41-17" href="#__codelineno-41-17"></a><span class="w">  </span><span class="n">wscript</span><span class="p">.</span><span class="n">echo</span><span class="w"> </span><span class="s2">&quot;age=&quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">.</span><span class="n">age</span>
+<a id="__codelineno-41-18" name="__codelineno-41-18" href="#__codelineno-41-18"></a><span class="k">End</span><span class="w"> </span><span class="k">With</span>
+</code></pre></div>
+<p>该程序使用对象。我们将其命名为 <em>objects.vbs</em>（.vbs 扩展名表示 VBScript 文件）。导航至该文件所在的目录并运行它：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>dos&gt;cscript objets.vbs
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>Microsoft (R) Windows Script Host Version 5.6
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>Copyright (C) Microsoft Corporation 1996-2001. All rights reserved.
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>
+<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>nom=dupont
+<a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a>age=18
+</code></pre></div>
+<p>现在，让我们编写以下使用数组的 JavaScript 程序：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>// tableau dans un variant
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>// tableau vide
+<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>tableau=new Array();
+<a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a>affiche(tableau);
+<a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a>// tableau croît dynamiquement
+<a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a>for(i=0;i<span class="p">&lt;</span><span class="nt">3</span><span class="err">;</span><span class="na">i</span><span class="err">++){</span>
+<a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a>  <span class="na">tableau</span><span class="err">.</span><span class="na">push</span><span class="err">(</span><span class="na">i</span><span class="err">*</span><span class="na">10</span><span class="err">);</span>
+<a id="__codelineno-43-8" name="__codelineno-43-8" href="#__codelineno-43-8"></a><span class="err">}</span>
+<a id="__codelineno-43-9" name="__codelineno-43-9" href="#__codelineno-43-9"></a><span class="err">//</span> <span class="na">affichage</span> <span class="na">tableau</span>
+<a id="__codelineno-43-10" name="__codelineno-43-10" href="#__codelineno-43-10"></a><span class="na">affiche</span><span class="err">(</span><span class="na">tableau</span><span class="err">);</span>
+<a id="__codelineno-43-11" name="__codelineno-43-11" href="#__codelineno-43-11"></a><span class="err">//</span> <span class="na">encore</span>
+<a id="__codelineno-43-12" name="__codelineno-43-12" href="#__codelineno-43-12"></a><span class="na">for</span><span class="err">(</span><span class="na">i</span><span class="o">=</span><span class="s">3;i&lt;6;i++){</span>
+<a id="__codelineno-43-13" name="__codelineno-43-13" href="#__codelineno-43-13"></a>  <span class="na">tableau</span><span class="err">.</span><span class="na">push</span><span class="err">(</span><span class="na">i</span><span class="err">*</span><span class="na">10</span><span class="err">);</span>
+<a id="__codelineno-43-14" name="__codelineno-43-14" href="#__codelineno-43-14"></a><span class="err">}</span>
+<a id="__codelineno-43-15" name="__codelineno-43-15" href="#__codelineno-43-15"></a><span class="na">affiche</span><span class="err">(</span><span class="na">tableau</span><span class="err">);</span>
+<a id="__codelineno-43-16" name="__codelineno-43-16" href="#__codelineno-43-16"></a>
+<a id="__codelineno-43-17" name="__codelineno-43-17" href="#__codelineno-43-17"></a><span class="err">//</span> <span class="na">tableaux</span> <span class="na">à</span> <span class="na">plusieurs</span> <span class="na">dimensions</span>
+<a id="__codelineno-43-18" name="__codelineno-43-18" href="#__codelineno-43-18"></a><span class="na">WScript</span><span class="err">.</span><span class="na">echo</span><span class="err">(&quot;</span><span class="na">-----------------------------</span><span class="err">&quot;);</span>
+<a id="__codelineno-43-19" name="__codelineno-43-19" href="#__codelineno-43-19"></a>
+<a id="__codelineno-43-20" name="__codelineno-43-20" href="#__codelineno-43-20"></a><span class="na">tableau2</span><span class="o">=</span><span class="s">new</span> <span class="na">Array</span><span class="err">();</span>
+<a id="__codelineno-43-21" name="__codelineno-43-21" href="#__codelineno-43-21"></a><span class="na">for</span><span class="err">(</span><span class="na">i</span><span class="o">=</span><span class="s">0;i&lt;3;i++){</span>
+<a id="__codelineno-43-22" name="__codelineno-43-22" href="#__codelineno-43-22"></a>  <span class="na">tableau2</span><span class="err">.</span><span class="na">push</span><span class="err">(</span><span class="na">new</span> <span class="na">Array</span><span class="err">());</span>
+<a id="__codelineno-43-23" name="__codelineno-43-23" href="#__codelineno-43-23"></a>  <span class="na">for</span><span class="err">(</span><span class="na">j</span><span class="o">=</span><span class="s">0;j&lt;4;j++){</span>
+<a id="__codelineno-43-24" name="__codelineno-43-24" href="#__codelineno-43-24"></a>    <span class="na">tableau2</span><span class="err">[</span><span class="na">i</span><span class="err">].</span><span class="na">push</span><span class="err">(</span><span class="na">i</span><span class="err">*</span><span class="na">10</span><span class="err">+</span><span class="na">j</span><span class="err">);</span>
+<a id="__codelineno-43-25" name="__codelineno-43-25" href="#__codelineno-43-25"></a>  <span class="err">}//</span><span class="na">for</span> <span class="na">j</span>
+<a id="__codelineno-43-26" name="__codelineno-43-26" href="#__codelineno-43-26"></a><span class="err">}//</span> <span class="na">for</span> <span class="na">i</span>
+<a id="__codelineno-43-27" name="__codelineno-43-27" href="#__codelineno-43-27"></a><span class="na">affiche2</span><span class="err">(</span><span class="na">tableau2</span><span class="err">);</span>
+<a id="__codelineno-43-28" name="__codelineno-43-28" href="#__codelineno-43-28"></a>
+<a id="__codelineno-43-29" name="__codelineno-43-29" href="#__codelineno-43-29"></a><span class="err">//</span> <span class="na">fin</span>
+<a id="__codelineno-43-30" name="__codelineno-43-30" href="#__codelineno-43-30"></a><span class="na">WScript</span><span class="err">.</span><span class="na">quit</span><span class="err">(</span><span class="na">0</span><span class="err">);</span>
+<a id="__codelineno-43-31" name="__codelineno-43-31" href="#__codelineno-43-31"></a>
+<a id="__codelineno-43-32" name="__codelineno-43-32" href="#__codelineno-43-32"></a><span class="err">//</span> <span class="na">---------------------------------------------------------</span>
+<a id="__codelineno-43-33" name="__codelineno-43-33" href="#__codelineno-43-33"></a><span class="na">function</span> <span class="na">affiche</span><span class="err">(</span><span class="na">tableau</span><span class="err">){</span>
+<a id="__codelineno-43-34" name="__codelineno-43-34" href="#__codelineno-43-34"></a>  <span class="err">//</span> <span class="na">affichage</span> <span class="na">tableau</span>
+<a id="__codelineno-43-35" name="__codelineno-43-35" href="#__codelineno-43-35"></a>  <span class="na">for</span><span class="err">(</span><span class="na">i</span><span class="o">=</span><span class="s">0;i&lt;tableau.length;i++){</span>
+<a id="__codelineno-43-36" name="__codelineno-43-36" href="#__codelineno-43-36"></a>    <span class="na">WScript</span><span class="err">.</span><span class="na">echo</span><span class="err">(&quot;</span><span class="na">tableau</span><span class="err">[&quot;</span> <span class="err">+</span> <span class="na">i</span> <span class="err">+</span> <span class="err">&quot;]=&quot;</span> <span class="err">+</span> <span class="na">tableau</span><span class="err">[</span><span class="na">i</span><span class="err">]);</span>
+<a id="__codelineno-43-37" name="__codelineno-43-37" href="#__codelineno-43-37"></a>  <span class="err">}//</span><span class="na">for</span>
+<a id="__codelineno-43-38" name="__codelineno-43-38" href="#__codelineno-43-38"></a><span class="err">}//</span><span class="na">function</span>
+<a id="__codelineno-43-39" name="__codelineno-43-39" href="#__codelineno-43-39"></a>
+<a id="__codelineno-43-40" name="__codelineno-43-40" href="#__codelineno-43-40"></a><span class="err">//</span> <span class="na">---------------------------------------------------------</span>
+<a id="__codelineno-43-41" name="__codelineno-43-41" href="#__codelineno-43-41"></a><span class="na">function</span> <span class="na">affiche2</span><span class="err">(</span><span class="na">tableau</span><span class="err">){</span>
+<a id="__codelineno-43-42" name="__codelineno-43-42" href="#__codelineno-43-42"></a>  <span class="err">//</span> <span class="na">affichage</span> <span class="na">tableau</span>
+<a id="__codelineno-43-43" name="__codelineno-43-43" href="#__codelineno-43-43"></a>  <span class="na">for</span><span class="err">(</span><span class="na">i</span><span class="o">=</span><span class="s">0;i&lt;tableau.length;i++){</span>
+<a id="__codelineno-43-44" name="__codelineno-43-44" href="#__codelineno-43-44"></a>    <span class="na">for</span><span class="err">(</span><span class="na">j</span><span class="o">=</span><span class="s">0;j&lt;tableau[i].length;j++){</span>
+<a id="__codelineno-43-45" name="__codelineno-43-45" href="#__codelineno-43-45"></a>      <span class="na">WScript</span><span class="err">.</span><span class="na">echo</span><span class="err">(&quot;</span><span class="na">tableau</span><span class="err">[&quot;</span> <span class="err">+</span> <span class="na">i</span> <span class="err">+</span> <span class="err">&quot;,&quot;</span> <span class="err">+</span> <span class="na">j</span> <span class="err">+</span> <span class="err">&quot;]=&quot;</span> <span class="err">+</span> <span class="na">tableau</span><span class="err">[</span><span class="na">i</span><span class="err">][</span><span class="na">j</span><span class="err">]);</span>
+<a id="__codelineno-43-46" name="__codelineno-43-46" href="#__codelineno-43-46"></a>    <span class="err">}//</span> <span class="na">for</span> <span class="na">j</span>
+<a id="__codelineno-43-47" name="__codelineno-43-47" href="#__codelineno-43-47"></a>  <span class="err">}//</span><span class="na">for</span> <span class="na">i</span>
+<a id="__codelineno-43-48" name="__codelineno-43-48" href="#__codelineno-43-48"></a><span class="err">}//</span><span class="na">function</span>
+</code></pre></div>
+<p>该程序使用数组。我们将其命名为 <em>arrays.js</em>（.js 后缀表示 JavaScript 文件）。导航至该文件所在的目录并运行它：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>dos&gt;cscript tableaux.js
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>Microsoft (R) Windows Script Host Version 5.6
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>Copyright (C) Microsoft Corporation 1996-2001. Tous droits réservés.
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>tableau[0]=0
+<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>tableau[1]=10
+<a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a>tableau[2]=20
+<a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a>tableau[0]=0
+<a id="__codelineno-44-9" name="__codelineno-44-9" href="#__codelineno-44-9"></a>tableau[1]=10
+<a id="__codelineno-44-10" name="__codelineno-44-10" href="#__codelineno-44-10"></a>tableau[2]=20
+<a id="__codelineno-44-11" name="__codelineno-44-11" href="#__codelineno-44-11"></a>tableau[3]=30
+<a id="__codelineno-44-12" name="__codelineno-44-12" href="#__codelineno-44-12"></a>tableau[4]=40
+<a id="__codelineno-44-13" name="__codelineno-44-13" href="#__codelineno-44-13"></a>tableau[5]=50
+<a id="__codelineno-44-14" name="__codelineno-44-14" href="#__codelineno-44-14"></a>-----------------------------
+<a id="__codelineno-44-15" name="__codelineno-44-15" href="#__codelineno-44-15"></a>tableau[0,0]=0
+<a id="__codelineno-44-16" name="__codelineno-44-16" href="#__codelineno-44-16"></a>tableau[0,1]=1
+<a id="__codelineno-44-17" name="__codelineno-44-17" href="#__codelineno-44-17"></a>tableau[0,2]=2
+<a id="__codelineno-44-18" name="__codelineno-44-18" href="#__codelineno-44-18"></a>tableau[0,3]=3
+<a id="__codelineno-44-19" name="__codelineno-44-19" href="#__codelineno-44-19"></a>tableau[1,0]=10
+<a id="__codelineno-44-20" name="__codelineno-44-20" href="#__codelineno-44-20"></a>tableau[1,1]=11
+<a id="__codelineno-44-21" name="__codelineno-44-21" href="#__codelineno-44-21"></a>tableau[1,2]=12
+<a id="__codelineno-44-22" name="__codelineno-44-22" href="#__codelineno-44-22"></a>tableau[1,3]=13
+<a id="__codelineno-44-23" name="__codelineno-44-23" href="#__codelineno-44-23"></a>tableau[2,0]=20
+<a id="__codelineno-44-24" name="__codelineno-44-24" href="#__codelineno-44-24"></a>tableau[2,1]=21
+<a id="__codelineno-44-25" name="__codelineno-44-25" href="#__codelineno-44-25"></a>tableau[2,2]=22
+<a id="__codelineno-44-26" name="__codelineno-44-26" href="#__codelineno-44-26"></a>tableau[2,3]=23
+</code></pre></div>
+<p>最后再看一个 PerlScript 的示例。您必须安装 Active Perl 才能使用 PerlScript。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>&lt;job id=&quot;PERL1&quot;&gt;
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>  &lt;script language=&quot;PerlScript&quot;&gt;
+<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>      # du Perl classique
+<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>    %dico=(&quot;maurice&quot;=&gt;&quot;juliette&quot;,&quot;philippe&quot;=&gt;&quot;marianne&quot;);
+<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>    <span class="ni">@cles</span>= keys %dico;
+<a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>    for ($i=0;$i&lt;=$#cles;$i++){
+<a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a>        $cle=$cles[$i];
+<a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a>      $valeur=$dico{$cle};
+<a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a>        $WScript-&gt;echo (&quot;clé=&quot;.$cle.&quot;, valeur=&quot;.$valeur);
+<a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a>    }
+<a id="__codelineno-45-11" name="__codelineno-45-11" href="#__codelineno-45-11"></a>    # du perlscript utilisant les objets Windows Script
+<a id="__codelineno-45-12" name="__codelineno-45-12" href="#__codelineno-45-12"></a>    $dico=$WScript-&gt;CreateObject(&quot;Scripting.Dictionary&quot;);
+<a id="__codelineno-45-13" name="__codelineno-45-13" href="#__codelineno-45-13"></a>    $dico-&gt;add(&quot;maurice&quot;,&quot;juliette&quot;);
+<a id="__codelineno-45-14" name="__codelineno-45-14" href="#__codelineno-45-14"></a>    $dico-&gt;add(&quot;philippe&quot;,&quot;marianne&quot;);
+<a id="__codelineno-45-15" name="__codelineno-45-15" href="#__codelineno-45-15"></a>    $WScript-&gt;echo($dico-&gt;item(&quot;maurice&quot;));
+<a id="__codelineno-45-16" name="__codelineno-45-16" href="#__codelineno-45-16"></a>    $WScript-&gt;echo($dico-&gt;item(&quot;philippe&quot;));    
+<a id="__codelineno-45-17" name="__codelineno-45-17" href="#__codelineno-45-17"></a>  &lt;/script&gt;
+<a id="__codelineno-45-18" name="__codelineno-45-18" href="#__codelineno-45-18"></a>&lt;/job&gt;
+</code></pre></div>
+<p>本程序演示了两个字典的创建和使用：一个采用经典的 Perl 风格，另一个使用 Windows Script <em>脚本字典</em>对象。我们将此代码保存到文件 <em>dico.wsf</em> 中（wsf 是 Windows Script 文件的扩展名）。导航至程序所在的文件夹并运行它：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>dos&gt;cscript dico.wsf
+<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>Microsoft (R) Windows Script Host Version 5.6
+<a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a>Copyright (C) Microsoft Corporation 1996-2001. Tous droits réservés.
+<a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a>
+<a id="__codelineno-46-5" name="__codelineno-46-5" href="#__codelineno-46-5"></a>clé=philippe, valeur=marianne
+<a id="__codelineno-46-6" name="__codelineno-46-6" href="#__codelineno-46-6"></a>clé=maurice, valeur=juliette
+<a id="__codelineno-46-7" name="__codelineno-46-7" href="#__codelineno-46-7"></a>juliette
+<a id="__codelineno-46-8" name="__codelineno-46-8" href="#__codelineno-46-8"></a>marianne
+</code></pre></div>
+<p>PerlScript 可以访问其运行容器中的对象。在此示例中，这些对象来自 Windows Script 容器。在 Web 编程环境中，VBScript、JavaScript 和 PerlScript 脚本既可以在 IE 浏览器内执行，也可以在 PWS 或 IIS 服务器上执行。如果脚本较为复杂，建议按照前文所述，在 Windows Script 容器中（即脱离 Web 环境）进行测试。 这样，您就可以仅测试脚本中不使用浏览器或服务器特定对象的功能。即使存在这一限制，这种方法仍然很有用，因为调试在 Web 服务器或浏览器中运行的脚本通常非常不切实际。</p>
+<p><a id="toc67828570"></a>
+<a id="toc57014801"></a>
+<a id="toc18463286"></a>
+<a id="toc14772381"></a></p>
+<h2 id="107-java">10.7. JAVA</h2>
+<p>Java 可通过以下 URL 获取：<strong>http://www.sun.com</strong><strong>，并</strong>安装在名为 <strong>&lt;java&gt;</strong> 的目录结构中，该目录包含以下元素：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>22/05/2002  05:51       &lt;DIR&gt;          .
+<a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a>22/05/2002  05:51       &lt;DIR&gt;          ..
+<a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a>22/05/2002  05:51       &lt;DIR&gt;          bin
+<a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a>22/05/2002  05:51       &lt;DIR&gt;          jre
+<a id="__codelineno-47-5" name="__codelineno-47-5" href="#__codelineno-47-5"></a>07/02/2002  12:52                8 277 README.txt
+<a id="__codelineno-47-6" name="__codelineno-47-6" href="#__codelineno-47-6"></a>07/02/2002  12:52               13 853 LICENSE
+<a id="__codelineno-47-7" name="__codelineno-47-7" href="#__codelineno-47-7"></a>07/02/2002  12:52                4 516 COPYRIGHT
+<a id="__codelineno-47-8" name="__codelineno-47-8" href="#__codelineno-47-8"></a>07/02/2002  12:52               15 290 readme.html
+<a id="__codelineno-47-9" name="__codelineno-47-9" href="#__codelineno-47-9"></a>22/05/2002  05:51       &lt;DIR&gt;          lib
+<a id="__codelineno-47-10" name="__codelineno-47-10" href="#__codelineno-47-10"></a>22/05/2002  05:51       &lt;DIR&gt;          include
+<a id="__codelineno-47-11" name="__codelineno-47-11" href="#__codelineno-47-11"></a>22/05/2002  05:51       &lt;DIR&gt;          demo
+<a id="__codelineno-47-12" name="__codelineno-47-12" href="#__codelineno-47-12"></a>07/02/2002  12:52           10 377 848 src.zip
+<a id="__codelineno-47-13" name="__codelineno-47-13" href="#__codelineno-47-13"></a>11/02/2002  12:55       &lt;DIR&gt;          docs
+</code></pre></div>
+<p>在 <strong>bin 目录中</strong>，你会找到 <strong>javac.exe</strong>（Java 编译器）和 <strong>java.exe（</strong>Java 虚拟机）。你可以进行以下测试：</p>
+<ol>
+  <li>编写以下脚本：
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="c1">//java program displaying the time</span>
+<a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>
+<a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.*</span><span class="p">;</span>
+<a id="__codelineno-48-4" name="__codelineno-48-4" href="#__codelineno-48-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.*</span><span class="p">;</span>
+<a id="__codelineno-48-5" name="__codelineno-48-5" href="#__codelineno-48-5"></a>
+<a id="__codelineno-48-6" name="__codelineno-48-6" href="#__codelineno-48-6"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">heure</span><span class="p">{</span>
+<a id="__codelineno-48-7" name="__codelineno-48-7" href="#__codelineno-48-7"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">arg</span><span class="o">[]</span><span class="p">){</span>
+<a id="__codelineno-48-8" name="__codelineno-48-8" href="#__codelineno-48-8"></a><span class="w">     </span><span class="c1">// retrieve date &amp; time</span>
+<a id="__codelineno-48-9" name="__codelineno-48-9" href="#__codelineno-48-9"></a><span class="w">     </span><span class="n">Date</span><span class="w"> </span><span class="n">maintenant</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="n">Date</span><span class="p">();</span>
+<a id="__codelineno-48-10" name="__codelineno-48-10" href="#__codelineno-48-10"></a><span class="w">      </span><span class="c1">// we display</span>
+<a id="__codelineno-48-11" name="__codelineno-48-11" href="#__codelineno-48-11"></a><span class="w">     </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Il est &quot;</span><span class="o">+</span><span class="n">maintenant</span><span class="p">.</span><span class="na">getHours</span><span class="p">()</span><span class="o">+</span>
+<a id="__codelineno-48-12" name="__codelineno-48-12" href="#__codelineno-48-12"></a><span class="w">        </span><span class="s">&quot;:&quot;</span><span class="o">+</span><span class="n">maintenant</span><span class="p">.</span><span class="na">getMinutes</span><span class="p">()</span><span class="o">+</span><span class="s">&quot;:&quot;</span><span class="o">+</span><span class="n">maintenant</span><span class="p">.</span><span class="na">getSeconds</span><span class="p">());</span>
+<a id="__codelineno-48-13" name="__codelineno-48-13" href="#__codelineno-48-13"></a><span class="w">  </span><span class="p">}</span><span class="c1">//hand</span>
+<a id="__codelineno-48-14" name="__codelineno-48-14" href="#__codelineno-48-14"></a><span class="p">}</span><span class="c1">//class</span>
+</code></pre></div>
+<ol>
+  <li>将此程序保存为 <i>heure.java</i>。打开一个 DOS 窗口。导航至包含 <i>heure.java</i> 文件的目录并编译它：
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>dos&gt;c:\jdk1.3\bin\javac heure.java
+<a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>Note: heure.java uses or overrides a deprecated API.
+<a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a>Note: Recompile with -deprecation for details.
+</code></pre></div>
+<p>在上述命令中，[c:\jdk1.3\bin\javac] 必须替换为 <em>javac.exe</em> 编译器的确切路径。您将在 <em>heure.java</em> 所在的同一目录中获得一个名为 <em>heure.class</em> 的文件；该文件即为即将由 <em>java.exe</em> 虚拟机执行的程序。</p>
+<ol>
+  <li>运行程序：
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>dos&gt;c:\jdk1.3\bin\java heure
+<a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a>Il est 10:44:2
+</code></pre></div>
+<p>在上述命令中，[c:\jdk1.3\bin\java] 必须替换为 Java 虚拟机 [java.exe] 的确切路径。 </p>
+<p><a id="toc67828571"></a>
+<a id="toc57014802"></a>
+<a id="toc18463287"></a>
+<a id="toc14772382"></a></p>
+<h2 id="108-apache">10.8. Apache 服务器</h2>
+<p>我们已经看到，可以通过 EasyPHP 应用程序获取 Apache 服务器。若要直接获取，请访问 Apache 网站：<strong>http://www.apache.org。</strong>安装过程会创建一个包含服务器所需所有文件的目录结构。我们将该目录命名为 <strong><em>&lt;apache&gt;</em></strong>。其目录结构类似于以下内容：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>UNINST   ISU       118 805  23/06/00  17:09 Uninst.isu
+<a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a>HTDOCS         &lt;REP&gt;        23/06/00  17:09 htdocs
+<a id="__codelineno-51-3" name="__codelineno-51-3" href="#__codelineno-51-3"></a>APACHE~1 DLL       299 008  25/02/00  21:11 ApacheCore.dll
+<a id="__codelineno-51-4" name="__codelineno-51-4" href="#__codelineno-51-4"></a>ANNOUN~1             3 000  23/02/00  16:51 Announcement
+<a id="__codelineno-51-5" name="__codelineno-51-5" href="#__codelineno-51-5"></a>ABOUT_~1            13 197  31/03/99  18:42 ABOUT_APACHE
+<a id="__codelineno-51-6" name="__codelineno-51-6" href="#__codelineno-51-6"></a>APACHE   EXE        20 480  25/02/00  21:04 Apache.exe
+<a id="__codelineno-51-7" name="__codelineno-51-7" href="#__codelineno-51-7"></a>KEYS                36 437  20/08/99  11:57 KEYS
+<a id="__codelineno-51-8" name="__codelineno-51-8" href="#__codelineno-51-8"></a>LICENSE              2 907  01/01/99  13:04 LICENSE
+<a id="__codelineno-51-9" name="__codelineno-51-9" href="#__codelineno-51-9"></a>MAKEFI~1 TMP        27 370  11/01/00  13:47 Makefile.tmpl
+<a id="__codelineno-51-10" name="__codelineno-51-10" href="#__codelineno-51-10"></a>README               2 109  01/04/98   6:59 README
+<a id="__codelineno-51-11" name="__codelineno-51-11" href="#__codelineno-51-11"></a>README   NT          3 223  19/03/99   9:55 README.NT
+<a id="__codelineno-51-12" name="__codelineno-51-12" href="#__codelineno-51-12"></a>WARNIN~1 TXT           339  21/09/98  13:09 WARNING-NT.TXT
+<a id="__codelineno-51-13" name="__codelineno-51-13" href="#__codelineno-51-13"></a>BIN            &lt;REP&gt;        23/06/00  17:09 bin
+<a id="__codelineno-51-14" name="__codelineno-51-14" href="#__codelineno-51-14"></a>MODULES        &lt;REP&gt;        23/06/00  17:09 modules
+<a id="__codelineno-51-15" name="__codelineno-51-15" href="#__codelineno-51-15"></a>ICONS          &lt;REP&gt;        23/06/00  17:09 icons
+<a id="__codelineno-51-16" name="__codelineno-51-16" href="#__codelineno-51-16"></a>LOGS           &lt;REP&gt;        23/06/00  17:09 logs
+<a id="__codelineno-51-17" name="__codelineno-51-17" href="#__codelineno-51-17"></a>CONF           &lt;REP&gt;        23/06/00  17:09 conf
+<a id="__codelineno-51-18" name="__codelineno-51-18" href="#__codelineno-51-18"></a>CGI-BIN        &lt;REP&gt;        23/06/00  17:09 cgi-bin
+<a id="__codelineno-51-19" name="__codelineno-51-19" href="#__codelineno-51-19"></a>PROXY          &lt;REP&gt;        23/06/00  17:09 proxy
+<a id="__codelineno-51-20" name="__codelineno-51-20" href="#__codelineno-51-20"></a>INSTALL  LOG         3 779  23/06/00  17:09 install.log
+</code></pre></div>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>conf
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Apache 配置文件目录</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>日志
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Apache 日志文件目录（监控）</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>bin
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Apache 可执行文件</div></td></tr></table>
+
+<p><a id="toc67828572"></a>
+<a id="toc57014803"></a>
+<a id="toc18463288"></a>
+<a id="toc14772383"></a></p>
+<h3 id="1081">10.8.1. 配置</h3>
+<p>在 <strong><em>&lt;Apache&gt;\conf</em></strong> 目录中，您将找到以下文件：<em>httpd.conf、srm.conf、access.conf</em>。在 Apache 的最新版本中，这三个文件已被合并为 <em>httpd.conf</em>。我们已经介绍了该配置文件的关键点。在下面的示例中，测试使用了 Apache 版本的 EasyPHP，因此使用的是其配置文件。 在此文件中<em>，DocumentRoot</em>（指定网页目录树的根目录）为 <em>e:\program files\easyphp\www</em>。</p>
+<p><a id="toc67828573"></a>
+<a id="toc57014804"></a>
+<a id="toc18463289"></a>
+<a id="toc14772384"></a></p>
+<h3 id="1082-php-apache">10.8.2. PHP - Apache 链接</h3>
+<p>为进行测试，请创建名为 <strong>intro.php</strong> 的文件，内容仅包含以下单行代码：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>&lt;? phpinfo() ?&gt;
+</code></pre></div>
+<p>并将该文件放置在 Apache 服务器的根目录（即上文提到的 <em>DocumentRoot</em>）中。访问 URL <strong>http://localhost/intro.php</strong>，您应能看到一列 <em>PHP</em> 信息：</p>
+<p><img src="images/100000000000028900000172D6AA302A.png" width="649" height="370" style="width:17.171cm;height:9.79cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000028900000172D6AA302A.png" /></p>
+<p>以下 PHP 脚本用于显示时间。我们之前已经见过它：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>&lt;?
+<a id="__codelineno-56-2" name="__codelineno-56-2" href="#__codelineno-56-2"></a>  // time : nb de millisecondes depuis 01/01/1970
+<a id="__codelineno-56-3" name="__codelineno-56-3" href="#__codelineno-56-3"></a>  // &quot;format affichage date-heure
+<a id="__codelineno-56-4" name="__codelineno-56-4" href="#__codelineno-56-4"></a>  // d: jour sur 2 chiffres
+<a id="__codelineno-56-5" name="__codelineno-56-5" href="#__codelineno-56-5"></a>  // m: mois sur 2 chiffres
+<a id="__codelineno-56-6" name="__codelineno-56-6" href="#__codelineno-56-6"></a>  // y : année sur 2 chiffres
+<a id="__codelineno-56-7" name="__codelineno-56-7" href="#__codelineno-56-7"></a>  // H : heure 0,23
+<a id="__codelineno-56-8" name="__codelineno-56-8" href="#__codelineno-56-8"></a>  // i : minutes
+<a id="__codelineno-56-9" name="__codelineno-56-9" href="#__codelineno-56-9"></a>  // s: secondes
+<a id="__codelineno-56-10" name="__codelineno-56-10" href="#__codelineno-56-10"></a>  print &quot;Nous sommes le &quot; . date(&quot;d/m/y H:i:s&quot;,time());
+<a id="__codelineno-56-11" name="__codelineno-56-11" href="#__codelineno-56-11"></a>?&gt;
+</code></pre></div>
+<p>将此文本文件放置在 Apache 服务器的根目录（<em>DocumentRoot</em>）中，并将其命名为 date<em>.php</em>。打开浏览器，输入 URL <strong>http://localhost/date.php</strong>。您将看到以下页面：</p>
+<p><img src="images/10000000000000FF0000004C3C348E29.png" width="255" height="76" style="width:6.747cm;height:2.011cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000FF0000004C3C348E29.png" /></p>
+<p><a id="toc67828574"></a>
+<a id="toc57014805"></a>
+<a id="toc18463290"></a>
+<a id="toc14772385"></a></p>
+<h3 id="1083-perl-apache">10.8.3. PERL-APACHE 链接</h3>
+<p>这可以通过在文件 <strong>&lt;apache&gt;\conf\httpd.conf</strong> 中添加以下形式的行来实现：<em>ScriptAlias /cgi-bin/ &quot;E:/Program Files/EasyPHP/cgi-bin/&quot;</em>。其语法为     <strong><mark style="background-color: #ffe994">ScriptAlias /cgi-bin/ &quot;&lt;cgi-bin&gt;&quot;</mark></strong>，其中 <strong>&lt;cgi-bin&gt;</strong> 是放置 CGI 脚本的文件夹。CGI（通用网关接口）是 Web 服务器与应用程序之间通信的标准。 当客户端向 Web 服务器请求动态页面（即由程序生成的页面）时，Web 服务器必须指示程序生成该页面。CGI 定义了服务器与程序之间的交互方式，特别是信息在两者之间如何传输。如有必要，请修改 <strong><em><code>ScriptAlias /cgi-bin/ &amp;quot;&amp;lt;cgi-bin&amp;gt;&amp;quot;</code></em></strong> 这行代码并重启 Apache 服务器。然后执行以下测试：</p>
+<ol>
+  <li>编写脚本：
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>#!c:\perl\bin\perl.exe
+<a id="__codelineno-57-2" name="__codelineno-57-2" href="#__codelineno-57-2"></a>
+<a id="__codelineno-57-3" name="__codelineno-57-3" href="#__codelineno-57-3"></a># script PERL affichant l&#39;heure
+<a id="__codelineno-57-4" name="__codelineno-57-4" href="#__codelineno-57-4"></a>
+<a id="__codelineno-57-5" name="__codelineno-57-5" href="#__codelineno-57-5"></a># modules
+<a id="__codelineno-57-6" name="__codelineno-57-6" href="#__codelineno-57-6"></a>use strict;
+<a id="__codelineno-57-7" name="__codelineno-57-7" href="#__codelineno-57-7"></a>
+<a id="__codelineno-57-8" name="__codelineno-57-8" href="#__codelineno-57-8"></a># programme
+<a id="__codelineno-57-9" name="__codelineno-57-9" href="#__codelineno-57-9"></a>my ($secondes,$minutes,$heure)=localtime(time);
+<a id="__codelineno-57-10" name="__codelineno-57-10" href="#__codelineno-57-10"></a>print <span class="err">&lt;</span><span class="p">&lt;</span><span class="nt">FINHTML</span>
+<a id="__codelineno-57-11" name="__codelineno-57-11" href="#__codelineno-57-11"></a><span class="na">Content-Type:</span> <span class="na">text</span><span class="err">/</span><span class="na">html</span>
+<a id="__codelineno-57-12" name="__codelineno-57-12" href="#__codelineno-57-12"></a>
+<a id="__codelineno-57-13" name="__codelineno-57-13" href="#__codelineno-57-13"></a><span class="err">&lt;</span><span class="na">html</span><span class="p">&gt;</span>
+<a id="__codelineno-57-14" name="__codelineno-57-14" href="#__codelineno-57-14"></a> <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-57-15" name="__codelineno-57-15" href="#__codelineno-57-15"></a>  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>heure<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-57-16" name="__codelineno-57-16" href="#__codelineno-57-16"></a> <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-57-17" name="__codelineno-57-17" href="#__codelineno-57-17"></a> <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-57-18" name="__codelineno-57-18" href="#__codelineno-57-18"></a>  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Il est $heure:$minutes:$secondes<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-57-19" name="__codelineno-57-19" href="#__codelineno-57-19"></a> <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-57-20" name="__codelineno-57-20" href="#__codelineno-57-20"></a>FINHTML
+<a id="__codelineno-57-21" name="__codelineno-57-21" href="#__codelineno-57-21"></a>;
+</code></pre></div>
+<ol>
+  <li>将此脚本放置在 <i>&lt;cgi-bin&gt;\heure.pl </i>中，其中 <i>&lt;cgi-bin&gt; </i>是可接收 CGI 脚本的目录（参见 <i>httpd.conf</i>）。第一行 <i>#!c:\perl\bin\perl.exe</i> 指定了 <i>perl.exe </i>可执行文件的路径。如有必要，请修改此路径。
+  </li>
+  <li>若尚未启动，请启动 Apache
+  </li>
+  <li>在浏览器中访问 URL<i> http://localhost/cgi-bin/heure.pl</i>。您将看到以下页面：
+  </li>
+</ol>
+
+<p><img src="images/10000000000000E90000005AE3481F09.png" width="233" height="90" style="width:6.165cm;height:2.381cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000E90000005AE3481F09.png" /></p>
+<p><a id="toc67828575"></a>
+<a id="toc57014806"></a>
+<a id="toc18463291"></a>
+<a id="toc14772386"></a></p>
+<h2 id="109-pws">10.9. PWS 服务器</h2>
+<p><a id="toc67828576"></a>
+<a id="toc57014807"></a>
+<a id="toc18463292"></a>
+<a id="toc14772387"></a></p>
+<h3 id="1091">10.9.1. 安装</h3>
+<p>PWS（个人 Web 服务器）是微软 IIS（Internet Information Server）的个人版。IIS 可在 NT 和 2000 系统上运行。 在 Win9x 系统上，PWS 通常包含在 Internet Explorer 的安装包中。但默认情况下不会安装。您必须执行 IE 的自定义安装，并选择安装 PWS。此外<strong><em>，Windows 95 的 NT 4.0 选件包中</em></strong>也提供了 PWS<strong>。</strong></p>
+<p><a id="toc67828577"></a>
+<a id="toc57014808"></a>
+<a id="toc18463293"></a>
+<a id="toc14772388"></a></p>
+<h3 id="1092">10.9.2. 初步测试</h3>
+<p>PWS 网页的根目录为 <em>drive:\inetpub\www</em><em>root，其中</em> <em>drive</em> <em>是指您安装 PWS 的磁盘。</em>下文我们将假设该磁盘为 D 盘。因此，URL <em>http://machine/rep1/page1.html</em> 对应于文件 <em>d:\inetpub\wwwroot\rep1\page1.html</em>。 PWS 服务器将任何带有 <strong>.asp</strong>（Active Server Pages）扩展名的文件解释为必须执行的脚本，以生成 HTML 页面。PWS 默认运行在 80 端口上。Apache Web 服务器也是如此……因此，如果您同时拥有这两个服务器，则必须停止 Apache 才能使用 PWS。 另一种解决方案是将 Apache 配置为在不同的端口上运行。因此，在 Apache 配置文件 [httpd.conf] 中，将 <mark style="background-color: #ffe994">Port 80</mark> 这一行替换为 <mark style="background-color: #ffe994">Port 81</mark>；Apache 现在将在 81 端口上运行，并可与 PWS 同时使用。如果 PWS 已启动，而您请求 URL http://localhost，您将看到类似于以下内容的页面：</p>
+<p><img src="images/10000000000001F3000000D2F165A6EC.png" width="499" height="210" style="width:13.203cm;height:5.556cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F3000000D2F165A6EC.png" /></p>
+<p><a id="toc67828578"></a>
+<a id="toc57014809"></a>
+<a id="toc18463294"></a>
+<a id="toc14772389"></a></p>
+<h3 id="1093-php-pws">10.9.3. PHP - PWS 链接</h3>
+<ol>
+  <li>下面是一个用于修改注册表的 <b>.reg</b> 文件。双击此文件即可修改注册表。此处，所需的 <i>DLL</i> 文件位于 <i>d:\php4</i> 目录下，与 PHP 可执行文件在一起。请根据需要进行修改。DLL 路径中的反斜杠 (\) 必须双写。
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>REGEDIT4
+<a id="__codelineno-58-2" name="__codelineno-58-2" href="#__codelineno-58-2"></a>
+<a id="__codelineno-58-3" name="__codelineno-58-3" href="#__codelineno-58-3"></a>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\w3svc\parameters\Script Map]
+<a id="__codelineno-58-4" name="__codelineno-58-4" href="#__codelineno-58-4"></a>&quot;.php&quot;=&quot;d:\\php4\\php4isapi.dll&quot;
+</code></pre></div>
+<ol>
+  <li>重启计算机以使注册表更改生效。
+  </li>
+</ol>
+
+<ol>
+  <li>在 <i>d:\inetpub\wwwroot</i>（即 PWS 服务器的根目录）下创建一个名为<b> &quot;php&quot; </b>的文件夹。完成后，打开 PWS 并转到 &quot;高级&quot; 选项卡。点击 &quot;添加&quot; 按钮以创建一个虚拟目录：
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>Répertoire/Parcourir : d:\inetpub\wwwroot\php
+<a id="__codelineno-59-2" name="__codelineno-59-2" href="#__codelineno-59-2"></a>Alias : php
+<a id="__codelineno-59-3" name="__codelineno-59-3" href="#__codelineno-59-3"></a>Cocher la case exécuter.
+</code></pre></div>
+<ol>
+  <li>确认设置并重启 PWS。将文件 <b>intro.php</b> 放置在 <i>d:\inetpub\wwwroot\php</i><b> 目录下，</b>该文件仅包含以下一行代码：
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>&lt;? phpinfo() ?&gt;
+</code></pre></div>
+<ol>
+  <li>从 PWS 服务器访问 URL<i> http://localhost/php/intro.php</i>。您应该会看到 Apache 已显示的 PHP 信息列表。
+  </li>
+</ol>
+
+<p><a id="toc67828579"></a>
+<a id="toc57014810"></a>
+<a id="toc18463295"></a>
+<a id="toc14772390"></a></p>
+<h2 id="1010-tomcatjava-servlet-jspjava">10.10. Tomcat：Java Servlet 和 JSP（Java 服务器页面）</h2>
+<p>Tomcat 是一款 Web 服务器，它通过 Servlet（由 Web 服务器执行的 Java 程序）或 JSP（Java Server Pages，将 Java 代码与 HTML 代码结合）来生成 HTML 页面。它相当于微软 IIS/PWS 服务器上的 ASP（Active Server Pages），后者将 VBScript 或 JavaScript 代码与 HTML 代码结合。</p>
+<p><a id="toc67828580"></a>
+<a id="toc57014811"></a>
+<a id="toc18463296"></a>
+<a id="toc14772391"></a></p>
+<h3 id="10101">10.10.1. 安装</h3>
+<p>Tomcat 可通过以下网址获取：<strong>http://jakarta.apache.org。</strong>下载 .exe 安装文件。运行该程序时，系统会首先提示您选择要使用的 JDK。Tomcat 需要 JDK 才能进行安装，并随后编译和执行 Java Servlet。因此，在安装 Tomcat 之前，您必须已安装 Java JDK。建议使用最新版本的 JDK。安装过程将创建一个 &lt;tomcat&gt; 目录结构：</p>
+<p><img src="images/10000000000000AC000000AA46B5972C.png" width="172" height="170" style="width:4.551cm;height:4.498cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000AC000000AA46B5972C.png" /></p>
+<p>只需将此压缩包解压到某个目录中即可。请选择路径中仅包含无空格名称的目录（例如，不要使用“Program Files”），因为 Tomcat 安装过程中存在一个错误。例如，可以使用 C:\tomcat 或 D:\tomcat。我们将此目录称为 <strong>&lt;tomcat&gt;</strong>。在其内部，你会发现一个名为 <strong>jakarta-tomcat</strong> 的文件夹，其中包含以下目录结构：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>LOGS           &lt;REP&gt;        15/11/00   9:04 logs
+<a id="__codelineno-61-2" name="__codelineno-61-2" href="#__codelineno-61-2"></a>LICENSE              2 876  18/04/00  15:56 LICENSE
+<a id="__codelineno-61-3" name="__codelineno-61-3" href="#__codelineno-61-3"></a>CONF           &lt;REP&gt;        15/11/00   8:53 conf
+<a id="__codelineno-61-4" name="__codelineno-61-4" href="#__codelineno-61-4"></a>DOC            &lt;REP&gt;        15/11/00   8:53 doc
+<a id="__codelineno-61-5" name="__codelineno-61-5" href="#__codelineno-61-5"></a>LIB            &lt;REP&gt;        15/11/00   8:53 lib
+<a id="__codelineno-61-6" name="__codelineno-61-6" href="#__codelineno-61-6"></a>SRC            &lt;REP&gt;        15/11/00   8:53 src
+<a id="__codelineno-61-7" name="__codelineno-61-7" href="#__codelineno-61-7"></a>WEBAPPS        &lt;REP&gt;        15/11/00   8:53 webapps
+<a id="__codelineno-61-8" name="__codelineno-61-8" href="#__codelineno-61-8"></a>BIN            &lt;REP&gt;        15/11/00   8:53 bin
+<a id="__codelineno-61-9" name="__codelineno-61-9" href="#__codelineno-61-9"></a>WORK           &lt;REP&gt;        15/11/00   9:04 work
+</code></pre></div>
+<p><a id="toc67828581"></a>
+<a id="toc57014812"></a>
+<a id="toc18463297"></a>
+<a id="toc14772392"></a></p>
+<h3 id="10102-tomcat-web">10.10.2. 启动/停止 Tomcat Web 服务器</h3>
+<p>Tomcat 是一个 Web 服务器，就像 Apache 或 PWS 一样。要启动它，请使用“程序”菜单中的链接：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>启动 Tomcat
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">以启动 Tomcat</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>停止 Tomcat
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">以停止它</div></td></tr></table>
+
+<p>启动 Tomcat 时，会出现一个 DOS 窗口，显示以下内容：</p>
+<p><img src="images/10000000000001300000006238751BC5.png" width="304" height="98" style="width:8.043cm;height:2.593cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001300000006238751BC5.png" /></p>
+<p>您可以将此 DOS 窗口最小化。只要 Tomcat 仍在运行，该窗口就会保持打开状态。随后，您可以进行首次测试。Tomcat Web 服务器运行在 8080 端口上。Tomcat 运行后，请打开网页浏览器并输入 URL <strong>http://localhost:8080</strong>。您应该会看到以下页面：</p>
+<p><img src="images/10000000000001930000011E74DBF1C6.png" width="403" height="286" style="width:10.663cm;height:7.567cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001930000011E74DBF1C6.png" /></p>
+<p>点击<strong>“Servlet Examples</strong>”链接：</p>
+<p><img src="images/10000000000002750000009DD0BB5A7B.png" width="604" height="151" style="width:15.991cm;height:3.992cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002750000009DD0BB5A7B.png" /></p>
+<p>点击 <em>RequestParameters</em> 的<em>“执行</em>”链接，然后点击 <em>Source</em> 的“执行”链接。您将初步了解什么是 Java Servlet。您也可以对 JSP 页面上的链接进行同样的操作。</p>
+<p>要停止 Tomcat，请使用“程序”菜单中的<em>“停止 Tomcat</em>”链接。</p>
+<p><a id="toc67828582"></a>
+<a id="toc57014813"></a>
+<a id="toc18463298"></a>
+<a id="toc14772393"></a></p>
+<h2 id="1011-jbuilder">10.11. JBuilder</h2>
+<p>JBuilder 是一个 Java 应用程序开发环境。若要构建不带图形界面的 Java Servlet，严格来说并不需要此类环境。仅需一个文本编辑器和 JDK 即可。然而，与前一种方法相比，JBuilder 具有以下优势：</p>
+<ul>
+  <li>调试便捷：编译器会高亮显示程序中的错误行，且可轻松定位至这些位置
+  </li>
+  <li>代码补全：使用 Java 对象时，JBuilder 会直接显示其属性和方法列表。鉴于大多数 Java 对象拥有大量难以记忆的属性和方法，此功能非常实用。
+  </li>
+</ul>
+
+<p>可在 <strong>http://www.borland.com/jbuilder</strong> 获取 JBuilder<strong>。您必须填写一份表格才能获取该软件。激活密钥将通过电子邮件发送。以安装 JBuilder 7 为例，操作步骤如下：</strong></p>
+<ul>
+  <li><b>下载了三个 ZIP 文件：一个用于应用程序，一个用于文档，一个用于示例。JBuilder 网站上为每个 ZIP 文件都提供了单独的链接。</b>
+  </li>
+  <li><b>首先安装应用程序，然后安装文档，最后安装示例</b>
+  </li>
+  <li><b>首次启动应用程序时，系统会要求输入激活密钥：即通过电子邮件发送给您的那个密钥。在第 7 版中，该密钥实际上是一个完整的文本文件，可将其放置在 JB7 安装文件夹中。当系统要求输入密钥时，您只需指定该文件即可。完成此操作后，系统将不再要求输入密钥。</b>
+  </li>
+</ul>
+
+<p><strong>若想使用 JBuilder 构建 Java Servlet，需要进行一些有用的配置。所谓的 JBuilder “个人版”是精简版，其中未包含使用 Java 进行 Web 开发所需的所有类。您可以配置 JBuilder 以使用 Tomcat 提供的类库。具体方法如下：</strong></p>
+<ul>
+  <li><b>启动 JBuilder</b>
+  </li>
+</ul>
+
+<p><img src="images/1000000000000336000000C712E719CB.png" width="680" height="165" style="width:17.979cm;height:4.353cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000336000000C712E719CB.png" /></p>
+<ul>
+  <li><b>启用“</b><i><b>工具/配置 JDK</b></i><b>”选项</b>
+  </li>
+</ul>
+
+<p><img src="images/1000000000000348000000FC3E5ED2E5.png" width="680" height="204" style="width:17.979cm;height:5.398cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000348000000FC3E5ED2E5.png" /></p>
+<p><strong>在上面的</strong><strong><em>“JDK 设置</em></strong><strong>”部分</strong><strong><em>，“名称</em></strong><strong>”字段通常显示为“JDK 1.3.1”。如果您拥有更新版的 JDK，请使用“</strong><strong><em>更改</em></strong><strong>”按钮指定其安装目录。在上例中，我们指定了目录</strong> <strong><em>E:\Program Files\jdk14</em></strong><strong>，其中安装了 JDK 1.4。从现在起，JBuilder 将使用此 JDK 进行编译和执行。 在（类、源代码、文档）部分，您将看到 JBuilder 将扫描的所有类库列表——在此示例中，即来自 JDK 1.4 的类。该 JDK 包含的类对于 Java Web 开发尚不充分。要添加其他类库，请</strong><strong><em>使用</em></strong><strong>“添加”按钮并选择您想要使用的其他</strong> <strong><em>.jar</em></strong> <strong>文件。.jar 文件即为类库。 Tomcat 4.x 包含 Web 开发所需的所有类库。它们位于</strong> <strong><em>&lt;tomcat&gt;\common\lib</em></strong> <strong>目录下，其中</strong> <strong><em>&lt;tomcat&gt;</em></strong> <strong>是 Tomcat 的安装目录：</strong></p>
+<p><img src="images/100000000000028D0000010D9D0A86D8.png" width="653" height="269" style="width:17.277cm;height:7.117cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000028D0000010D9D0A86D8.png" /></p>
+<p><strong>我们将通过“添加”按钮，将这些库逐一添加到 JBuilder 扫描的库列表中：</strong></p>
+<p><img src="images/100000000000021700000114277D4A9F.png" width="535" height="276" style="width:14.155cm;height:7.303cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021700000114277D4A9F.png" /></p>
+<p>从现在起，您可以编译符合 J2EE 标准的 Java 程序，包括 Java Servlet。JBuilder 仅用于编译；后续的执行将由 Tomcat 根据本课程所述的流程处理。</p>
+<p><a id="toc67828583"></a></p>
+<h2 id="1012-cassini-web">10.12. Cassini Web 服务器</h2>
+<p>若需使用微软的 .NET 平台，可采用 Cassini Web 服务器。该服务器可通过名为 [WebMatrix] 的另一款产品获取，这是一款面向 .NET 平台的免费 Web 开发环境，其下载地址为： </p>
+<p><img src="images/100000000000027700000130BF83E1F5.png" width="631" height="304" style="width:16.695cm;height:8.043cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000027700000130BF83E1F5.png" /></p>
+<p>请仔细遵循产品安装步骤：</p>
+<ul>
+  <li>下载并安装 .NET 平台（截至 2004 年 3 月为 1.1 版）
+  </li>
+  <li>下载并安装 WebMatrix
+  </li>
+  <li>下载并安装 MSDE（Microsoft Data Engine），这是 SQL Server 的精简版。
+  </li>
+</ul>
+
+<p>安装完成后，[WebMatrix] 产品将出现在已安装的程序列表中：</p>
+<p><img src="images/1000000000000196000000573DB796C0.png" width="406" height="87" style="width:10.742cm;height:2.302cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000196000000573DB796C0.png" /></p>
+<p>[ASP.NET] WebMatrix 链接将启动 ASP.NET 开发集成开发环境（IDE）：</p>
+<p><img src="images/100000000000022E00000197561B2721.png" width="558" height="407" style="width:14.764cm;height:10.769cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000022E00000197561B2721.png" /></p>
+<p>[类浏览器] 链接将启动一个用于浏览 .NET 类的工具：</p>
+<p><img src="images/1000000000000207000000C4C12F91AA.png" width="519" height="196" style="width:13.732cm;height:5.186cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000207000000C4C12F91AA.png" /></p>
+<p>为测试安装效果，让我们启动 [WebMatrix]：</p>
+<p><span style="color: #000000">1</span><span style="color: #000000">2</span><span style="color: #000000">3</span><span style="color: #000000">4</span></p>
+<p><img src="images/1000000000000207000001C06E62C4DC.png" width="519" height="448" style="width:13.732cm;height:11.853cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000207000001C06E62C4DC.png" /></p>
+<p>首次启动时，[WebMatrix] 会提示您输入新项目的规格。这是其默认配置。您可以进行设置，使其在启动时不再显示此对话框。之后，您可以通过 [文件/新建文件] 选项访问它。 [WebMatrix] 允许您为各种 Web 应用程序创建模板。在上文中，我们在 (1) 中指定要创建一个 [ASP.NET 页面] 应用程序，即一个 Web 页面。在 (2) 中，我们指定该 Web 页面的存放文件夹。在 (3) 中，我们输入页面名称。该名称必须带有 .aspx 扩展名。 最后，在 (4) 中，我们指定使用 VB.NET 语言进行开发；[WebMatrix] 还支持 C# 和 J# 语言。</p>
+<p>完成上述操作后，[WebMatrix] 将显示 [demo1.aspx] 文件的编辑页面。我们在其中输入以下代码：</p>
+<p><img src="images/100000000000012D00000079AF7637E9.png" width="301" height="121" style="width:7.964cm;height:3.201cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000012D00000079AF7637E9.png" /></p>
+<ul>
+  <li>[设计] 选项卡允许您“设计”要构建的网页。其工作原理与 Windows 应用程序开发 IDE 类似。
+  </li>
+  <li>在 [设计] 选项卡中对网页进行的图形化设计，将在 [HTML] 选项卡中生成相应的 HTML 代码
+  </li>
+  <li>网页可能包含会触发需要响应的事件的控件，例如按钮。这些事件将由放置在 [代码] 选项卡中的 VB.NET 代码进行处理
+  </li>
+  <li>最终，demo1.aspx 文件是一个结合了 HTML 代码和 VB.NET 代码的文本文件，它由 [设计] 选项卡中创建的图形化设计、[HTML] 选项卡中手动添加的 HTML 代码以及 [代码] 选项卡中放置的 VB.NET 代码共同组成。整个文件可在 [全部] 选项卡中查看。
+  </li>
+  <li>经验丰富的 ASP.NET 开发人员无需借助任何 IDE，即可直接使用文本编辑器构建 demo1.aspx 文件。
+  </li>
+</ul>
+
+<p>让我们选择 [All] 选项。我们可以看到 [WebMatrix] 已经生成了一些代码：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="err">&lt;</span>%@ Page Language=&quot;VB&quot; %&gt;
+<a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">runat</span><span class="o">=</span><span class="s">&quot;server&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-64-3" name="__codelineno-64-3" href="#__codelineno-64-3"></a>
+<a id="__codelineno-64-4" name="__codelineno-64-4" href="#__codelineno-64-4"></a><span class="w">    </span><span class="s1">&#39; Insert page code here</span>
+<a id="__codelineno-64-5" name="__codelineno-64-5" href="#__codelineno-64-5"></a><span class="s1">    &#39;</span>
+<a id="__codelineno-64-6" name="__codelineno-64-6" href="#__codelineno-64-6"></a>
+<a id="__codelineno-64-7" name="__codelineno-64-7" href="#__codelineno-64-7"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-64-8" name="__codelineno-64-8" href="#__codelineno-64-8"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-64-9" name="__codelineno-64-9" href="#__codelineno-64-9"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-64-10" name="__codelineno-64-10" href="#__codelineno-64-10"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-64-11" name="__codelineno-64-11" href="#__codelineno-64-11"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-64-12" name="__codelineno-64-12" href="#__codelineno-64-12"></a>    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">runat</span><span class="o">=</span><span class="s">&quot;server&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-64-13" name="__codelineno-64-13" href="#__codelineno-64-13"></a>        <span class="cm">&lt;!-- Insert content here --&gt;</span>
+<a id="__codelineno-64-14" name="__codelineno-64-14" href="#__codelineno-64-14"></a>    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<a id="__codelineno-64-15" name="__codelineno-64-15" href="#__codelineno-64-15"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-64-16" name="__codelineno-64-16" href="#__codelineno-64-16"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>我们在此不作此代码的解释。我们将按如下方式对其进行转换：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-65-2" name="__codelineno-65-2" href="#__codelineno-65-2"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Démo asp.net <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-65-4" name="__codelineno-65-4" href="#__codelineno-65-4"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-65-5" name="__codelineno-65-5" href="#__codelineno-65-5"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-65-6" name="__codelineno-65-6" href="#__codelineno-65-6"></a>    Il est <span class="err">&lt;</span>% =Date.Now.ToString(&quot;hh:mm:ss&quot;) %&gt;
+<a id="__codelineno-65-7" name="__codelineno-65-7" href="#__codelineno-65-7"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-65-8" name="__codelineno-65-8" href="#__codelineno-65-8"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>上面的代码是 HTML 和 VB.NET 代码的混合。它被放置在 &lt;% ... %&gt; 标签内。要运行此代码，我们使用 [视图/启动] 选项。[WebMatrix] 随后会启动 Cassini Web 服务器（如果它尚未运行） </p>
+<p><img src="images/10000000000001BE0000012C81C4137D.png" width="446" height="300" style="width:11.8cm;height:7.938cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001BE0000012C81C4137D.png" /></p>
+<p>您可以接受此对话框中提供的默认值，并选择 [启动] 选项。此时 Web 服务器即处于活动状态。[WebMatrix] 随后将在其运行的计算机上启动默认浏览器，并请求 URL http://localhost:8080/demo1.aspx：</p>
+<p><img src="images/10000000000001D60000006273BDCF3F.png" width="470" height="98" style="width:12.435cm;height:2.593cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001D60000006273BDCF3F.png" /></p>
+<p>也可以在 [WebMatrix] 外部使用 Cassini 服务器。服务器可执行文件位于 &lt;WebMatrix&gt;\&lt;version&gt;\WebServer.exe，其中 &lt;WebMatrix&gt; 是 [WebMatrix] 的安装目录，&lt;version&gt; 是其版本号：</p>
+<p><img src="images/10000000000001750000011B3CCCC791.png" width="373" height="283" style="width:9.869cm;height:7.488cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001750000011B3CCCC791.png" /></p>
+<p>打开命令提示符窗口，并导航至 Cassini 服务器文件夹：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>E:\Program Files\Microsoft ASP.NET Web Matrix\v0.6.812&gt;dir
+<a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a>...
+<a id="__codelineno-66-3" name="__codelineno-66-3" href="#__codelineno-66-3"></a>29/05/2003  11:00               53 248 WebServer.exe
+<a id="__codelineno-66-4" name="__codelineno-66-4" href="#__codelineno-66-4"></a>...
+</code></pre></div>
+<p>让我们不带任何参数运行 [WebServer.exe]：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>E:\Program Files\Microsoft ASP.NET Web Matrix\v0.6.812&gt;webserver
+</code></pre></div>
+<p>此时会弹出一个帮助窗口：</p>
+<p><img src="images/10000000000001E20000014D867BCBA8.png" width="482" height="333" style="width:12.753cm;height:8.811cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E20000014D867BCBA8.png" /></p>
+<p>[WebServer] 应用程序（也称为 Cassini Web 服务器）接受三个参数：</p>
+<ul>
+  <li><b>/port</b>：Web 服务的端口号。可以是任意数字。默认值为 80
+  </li>
+  <li><b>/path</b>：磁盘上文件夹的物理路径
+  </li>
+  <li><b>/vpath</b>：与前述物理文件夹关联的虚拟文件夹。请注意，语法并非 /path=path，而是 /vpath:path，这与上文帮助面板所述不同。
+  </li>
+</ul>
+
+<p>让我们将文件 [demo1.aspx] 放置在以下文件夹中： </p>
+<p><img src="images/100000000000014A0000004F293092FD.png" width="330" height="79" style="width:8.731cm;height:2.09cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014A0000004F293092FD.png" /></p>
+<p>我们将虚拟文件夹 [/webmatrix] 与物理文件夹 [d:\data\devel\webmatrix] 关联起来。Web 服务器可通过以下方式启动：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>E:\Program Files\Microsoft ASP.NET Web Matrix\v0.6.812&gt;webserver /port:100 /path:&quot;d:\data\devel\webmatrix&quot; /vpath:&quot;/webmatrix&quot;
+</code></pre></div>
+<p>Cassini 服务器现已启动，其图标会出现在任务栏中。若双击该图标：</p>
+<p><img src="images/10000000000001A8000000DF096B245B.png" width="424" height="223" style="width:11.218cm;height:5.9cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A8000000DF096B245B.png" /></p>
+<p>您将看到服务器的启动设置。您还可以选择停止 [Stop] 或重启 [Restart] Web 服务器。若点击 [Root URL] 链接，服务器的 Web 目录树根目录将在浏览器中打开：</p>
+<p><img src="images/10000000000001C3000000E9014D2A3A.png" width="451" height="233" style="width:11.933cm;height:6.165cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001C3000000E9014D2A3A.png" /></p>
+<p>点击 [demos] 链接：</p>
+<p><img src="images/10000000000001D6000000E22471000D.png" width="470" height="226" style="width:12.435cm;height:5.98cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001D6000000E22471000D.png" /></p>
+<p>然后点击 [demo1.aspx] 链接：</p>
+<p><img src="images/1000000000000219000000849C35A808.png" width="537" height="132" style="width:14.208cm;height:3.493cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000219000000849C35A808.png" /></p>
+<p>我们可以看到，如果物理文件夹 P=[d:\data\devel\webmatrix] 已映射到虚拟文件夹 V=[/webmatrix]，且服务器在 100 端口上运行， 那么物理位置位于 [P\demos] 的网页 [demo1.aspx]，将可通过 URL [http://localhost:100/V/demos/demo1.aspx] 在本地访问。</p>
+<p>在此特定案例中，我们已证明 ASP.NET Web 开发可以通过使用简单的文本编辑器编写网页，并借助 Cassini Web 服务器进行测试来完成。无论应用程序的复杂程度如何，这一方法都适用。[WebMatrix] IDE 提供了一些开发便利，但并不多。像 Visual Studio.NET 这样的工具功能要强大得多，但它是商业产品。</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
+        </a>
+        <br>
+        本教程由 <strong>Serge Tahé</strong> 编写，根据
+<em>知识共享 署名-非商业性使用-
+相同方式共享 3.0 未移植版</em>.
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
