@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -367,14 +369,14 @@
   
   
     <li class="md-nav__item">
-      <a href="aspnet-web-aiauen.html" class="md-nav__link">
+      <a href="webaiauen--aspnet.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. ASP.NET Web 开发入门
+    3. Web开发入门  ASP.NET
   
 
     
@@ -394,14 +396,14 @@
   
   
     <li class="md-nav__item">
-      <a href="aspnet-aiaihu.html" class="md-nav__link">
+      <a href="aiaihu-aspnet.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4. ASP.NET 开发基础
+    4. 开发基础 ASP.NET
   
 
     
@@ -475,14 +477,14 @@
   
   
     <li class="md-nav__item">
-      <a href="asp-uuiuian---1.html" class="md-nav__link">
+      <a href="uuiuian-asp---1.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7. ASP 服务器组件 - 1
+    7. 服务器组件 ASP - 1
   
 
     
@@ -502,14 +504,14 @@
   
   
     <li class="md-nav__item">
-      <a href="asp-uuiuian---2.html" class="md-nav__link">
+      <a href="uuiuian-asp---2.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    8. ASP 服务器组件 - 2
+    8. 服务器组件 ASP - 2
   
 
     
@@ -529,14 +531,14 @@
   
   
     <li class="md-nav__item">
-      <a href="asp-uuiuian---3.html" class="md-nav__link">
+      <a href="uuiuian-asp---3.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. ASP 服务器组件 - 3
+    9. 服务器组件 ASP - 3
   
 
     
@@ -556,14 +558,14 @@
   
   
     <li class="md-nav__item">
-      <a href="uu---web-aiaongu.html" class="md-nav__link">
+      <a href="uu---webaiaongu.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. 附录 - Web 开发工具
+    10. 附录 - Web开发工具
   
 
     
@@ -593,18 +595,15 @@
 
 
 
-<h1 id="1">1. 简介</h1>
-<p>本文件的PDF版本可在此处获取 |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQDgawcuZQ9QSLT0H5NBy-YJAaUOUxzSiw7p0bVA97uVzrY?e=bU5i7l">HERE</a>|。</p>
-<p>本文档仅作为课程补充材料：并非完整的课程。深入学习需要讲师的指导，且其中许多主题尚未涉及。本文的撰写受到作者背景的影响，此前作者曾撰写过两份关于Web开发的文档——先是Java，随后是PHP。这两份文档结构相似，因此可以使用相同的示例对这两种技术进行比较。 本文在ASP.NET开发中采用了相同的方法。这使得本文件与书店中常见的书籍大不相同——几乎所有书籍都强调ASP.NET允许您像开发Windows应用程序一样开发Web应用程序。客户端浏览器中显示的界面可以像Windows界面一样构建：</p>
+<h1 id="1">1. <span style="color: #365f91"><strong>简介</strong></span></h1>
+<p>本文档的PDF版本已发布 |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQDgawcuZQ9QSLT0H5NBy-YJAaUOUxzSiw7p0bVA97uVzrY?e=7Rhfxc">HERE</a>|。</p>
+<p>本文档仅为课程辅助资料，并非完整的课程内容。深入学习需在教师指导下进行，且部分主题尚未涉及。 本文的撰写受到作者过往经验的影响，作者此前曾撰写过两份关于Web开发的文档，首先是Java，随后是PHP。这两份文档结构相似，使得读者能够通过相同的示例对比这两种技术。本文在ASP.NET开发方面也采用了同样的做法。 这使得本书与书店中常见的书籍大不相同——后者几乎都强调ASP.NET允许像开发Windows应用程序那样开发Web应用程序。在客户端浏览器中呈现的界面可以像Windows界面那样构建：</p>
 <ul>
-  <li>使用 Visual Studio.NET 或 WebMatrix 等集成开发环境时，用户界面是通过将图形对象拖放至设计窗口来构建的
-  </li>
-  <li>这些对象具有属性、方法并会触发事件
-  </li>
+<li>使用 Visual Studio.NET 或 WebMatrix 等 IDE 工具时，用户界面是通过将图形对象拖放到设计窗口中来构建的</li>
+<li>这些对象具有属性、方法并能触发事件</li>
 </ul>
-
-<p>在此，我们仅涵盖这些概念中最基础的内容，这些内容被视为 ASP.NET 中最具创新性的部分……这些重要但非基础的概念将在本课程的第 2 卷中详细讲解。在第 1 卷中，我们认为更重要的是聚焦于 Web 开发的基础知识，这些知识适用于任何技术（Java、PHP、ASP.NET）。ASP.NET 那些能够提高生产力的专有扩展将在后续内容中介绍。 在讲解 Web 开发时，我们特别强调 MVC（模型、视图、控制器）架构，该架构常被推荐用于构建 Web 应用程序。这一概念与所采用的技术无关。但它恰好与 ASP.NET 技术所倡导的“将 Web 应用程序设计为 Windows 应用程序”的方法相冲突。这也是为何这个在 ASP.NET 文献中备受推崇的概念被推迟到第二卷讲解的另一个原因。</p>
-<p>鉴于本文档面向学生群体，我们在示例中仅使用互联网上可免费获取的工具。因此，读者能够自行获取这些工具，并在自己的计算机上测试示例。附录“Web 工具”提供了获取和安装这些工具的说明。</p>
+<p>在此，我们仅对这些被视为 ASP.NET 最具创新性的概念做最简要的说明……这些重要但非基础的概念将在本课程的第 2 卷中介绍。 在本卷（第1卷）中，我们认为更应着重强调Web开发的基础知识，这些知识无论采用何种技术（Java、PHP、ASP.NET）都适用。 ASP.NET的专有扩展功能（可提升开发效率）将在后续章节中介绍。在讲解Web开发时，我们特别强调MVC架构（模型、视图、控制器），该架构常被推荐用于构建Web应用程序。  这一概念与所采用的技术无关。但它与ASP.NET技术所倡导的“将Web应用程序设计为Windows应用程序”的理念并不相容。这也是为何在ASP.NET文献中备受推崇的这一概念，最终被移至第2卷的原因。</p>
+<p>鉴于本文档面向学生群体，我们在示例中仅使用互联网上可免费获取的工具。读者可自行获取这些工具，并在个人电脑上测试示例。附录“Web工具”提供了获取和安装这些工具的指引。</p>
 <p>Serge Tahé</p>
 <p>2004年4月</p>
 
