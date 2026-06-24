@@ -3793,72 +3793,39 @@
 </code></pre></div>
 <p>[main.aspx.vb]</p>
 <p>Public Class main</p>
-<div class="highlight"><pre><span></span><code>继承自 System.Web.UI.Page
-
-Private Sub Page\_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) 通过 MyBase.Load 句柄
-
-    &amp;#x27; 获取要执行的操作
-
-    Dim action As String
-
-    If Request.QueryString(&amp;quot;action&amp;quot;) Is Nothing Then
-
-        action = &amp;quot;label&amp;quot;
-
-    Else
-
-        action = Request.QueryString(&amp;quot;action&amp;quot;).ToString.ToLower
-
-    End If
-
-    &amp;#x27; 执行操作
-
-    根据 action 进行判断
-
-        Case &amp;quot;label&amp;quot;
-
-            Server.Transfer(&amp;quot;form2.aspx&amp;quot;)
-
-        Case &amp;quot;button&amp;quot;
-
-            Server.Transfer(&amp;quot;form3.aspx&amp;quot;)
-
-        Case &amp;quot;textbox1&amp;quot;
-
-            Server.Transfer(&amp;quot;form4.aspx&amp;quot;)
-
-        Case &amp;quot;textbox2&amp;quot;
-
-            Server.Transfer(&amp;quot;form5.aspx&amp;quot;)
-
-        Case &amp;quot;dropdownlist&amp;quot;
-
-            Server.Transfer(&amp;quot;form6.aspx&amp;quot;)
-
-        “listbox”框
-
-            Server.Transfer(&amp;quot;form7.aspx&amp;quot;)
-
-        “复选框”
-
-            Server.Transfer(&amp;quot;form8.aspx&amp;quot;)
-
-        “复选框列表”
-
-            Server.Transfer(&amp;quot;form8b.aspx&amp;quot;)
-
-        案例 &amp;quot;面板&amp;quot;
-
-            Server.Transfer(&amp;quot;form9.aspx&amp;quot;)
-
-        Case Else
-
-            Server.Transfer(&amp;quot;form2.aspx&amp;quot;)
-
-    End Select
-
-End Sub
-</code></pre></div>
+<p>继承自 System.Web.UI.Page</p>
+<p>Private Sub Page_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) 通过 MyBase.Load 句柄</p>
+<p>&#x27; 获取要执行的操作</p>
+<p>Dim action As String</p>
+<p>If Request.QueryString(&quot;action&quot;) Is Nothing Then</p>
+<p>action = &quot;label&quot;</p>
+<p>Else</p>
+<p>action = Request.QueryString(&quot;action&quot;).ToString.ToLower</p>
+<p>End If</p>
+<p>&#x27; 执行操作</p>
+<p>根据 action 进行判断</p>
+<p>Case &quot;label&quot;</p>
+<p>Server.Transfer(&quot;form2.aspx&quot;)</p>
+<p>Case &quot;button&quot;</p>
+<p>Server.Transfer(&quot;form3.aspx&quot;)</p>
+<p>Case &quot;textbox1&quot;</p>
+<p>Server.Transfer(&quot;form4.aspx&quot;)</p>
+<p>Case &quot;textbox2&quot;</p>
+<p>Server.Transfer(&quot;form5.aspx&quot;)</p>
+<p>Case &quot;dropdownlist&quot;</p>
+<p>Server.Transfer(&quot;form6.aspx&quot;)</p>
+<p>“listbox”框</p>
+<p>Server.Transfer(&quot;form7.aspx&quot;)</p>
+<p>“复选框”</p>
+<p>Server.Transfer(&quot;form8.aspx&quot;)</p>
+<p>“复选框列表”</p>
+<p>Server.Transfer(&quot;form8b.aspx&quot;)</p>
+<p>案例 &quot;面板&quot;</p>
+<p>Server.Transfer(&quot;form9.aspx&quot;)</p>
+<p>Case Else</p>
+<p>Server.Transfer(&quot;form2.aspx&quot;)</p>
+<p>End Select</p>
+<p>End Sub</p>
 <p>End Class</p>
 <p>我们的控制器非常简单。根据参数 [action] 的值，它将请求的处理转交给相应的页面。与包含链接的 HTML 页面相比，它没有任何额外价值。 不过，只需添加一个身份验证页面，就能看出它的价值。如果用户需要通过身份验证（用户名、密码）才能访问应用程序，那么控制器 [main.aspx] 就是验证身份验证是否成功的好地方。</p>
 
